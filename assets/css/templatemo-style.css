@@ -46,7 +46,7 @@ p {
 }
 
 h4 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.25px;
@@ -65,6 +65,16 @@ ul {
 
 ul li {
     display: inline-block;
+}
+
+.normal-bullets li {
+    display: list-item;
+    list-style: disc
+}
+
+.dash-bullets li {
+    display: list-item;
+    list-style: circle
 }
 
 html {
@@ -289,14 +299,12 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
-    padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
 
 .section-heading {
     text-align: center;
-    padding: 80px 45px;
+    padding: 40px 45px;
 }
 
 .section-heading h2 {
@@ -397,34 +405,30 @@ button:hover {
     padding-right: 5px;
 }
 
-.service-item {
+.experience-item {
     margin-bottom: 10px;
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
 }
 
-.service-item h4 {
+.experience-item p {
     transition: all 0.5s;
 }
 
-.service-item p {
-    transition: all 0.5s;
-}
-
-.service-item:hover {
+.experience-item:hover {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h4 {
+.experience-item:hover {
     color: #1e1e1e;
 }
 
-.service-item:hover p {
+.experience-item:hover p {
     color: #4a4a4a;
 }
 
-.service-item .service-icon {
+.experience-item .experience-icon {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -434,38 +438,18 @@ button:hover {
     transition: all 0.5s;
 }
 
-.service-item .first-service-icon {
-    background-image: url(../images/first-white-icon.png);
+.experience-header {
+    font-size: 1.6rem;
 }
 
-.service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
+.experience-subheader {
+    font-size: 1.3rem;
 }
 
-.service-item .second-service-icon {
-    background-image: url(../images/second-white-icon.png);
+.com-logo {
+    max-height: 8rem;
+    width: auto;
 }
-
-.service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
-}
-
-.service-item .third-service-icon {
-    background-image: url(../images/third-white-icon.png);
-}
-
-.service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
-}
-
-.service-item .fourth-service-icon {
-    background-image: url(../images/fourth-white-icon.png);
-}
-
-.service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
-}
-
 
 /* My Work */
 
