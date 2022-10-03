@@ -1,0 +1,60 @@
+{
+  "roots": [
+    {
+      "key": "ht682iqd3xvnbo3qkzf6xbc",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "secondbrain",
+      "children": [
+        {
+          "key": "8du26d930z997epwecmvp70",
+          "title": "Publishing",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "secondbrain",
+          "children": [
+            {
+              "key": "vy8cgig6uv1hav1zfzxj9na",
+              "title": "GitHub Actions",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "secondbrain",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "nvv71nco88r8tqfuse27qqq",
+      "title": "HTML",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "secondbrain",
+      "children": []
+    },
+    {
+      "key": "c1jujq1qz16ipp3oaghs84u",
+      "title": "JavaScript",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "secondbrain",
+      "children": []
+    }
+  ],
+  "child2parent": {
+    "ht682iqd3xvnbo3qkzf6xbc": null,
+    "8du26d930z997epwecmvp70": "ht682iqd3xvnbo3qkzf6xbc",
+    "vy8cgig6uv1hav1zfzxj9na": "8du26d930z997epwecmvp70",
+    "nvv71nco88r8tqfuse27qqq": null,
+    "c1jujq1qz16ipp3oaghs84u": null
+  },
+  "notesLabelById": {
+    "ht682iqd3xvnbo3qkzf6xbc": "Dendron",
+    "8du26d930z997epwecmvp70": "Publishing",
+    "vy8cgig6uv1hav1zfzxj9na": "GitHub Actions",
+    "nvv71nco88r8tqfuse27qqq": "HTML",
+    "c1jujq1qz16ipp3oaghs84u": "JavaScript"
+  }
+}

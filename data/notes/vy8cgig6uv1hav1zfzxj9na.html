@@ -1,0 +1,122 @@
+<h1 id="github-actions">GitHub Actions<a aria-hidden="true" class="anchor-heading icon-link" href="#github-actions"></a></h1>
+<h1 id="summary">Summary:<a aria-hidden="true" class="anchor-heading icon-link" href="#summary"></a></h1>
+<ul>
+<li>Do the initial <code>GitHub Actions</code> setup</li>
+<li>Make a commit to your repo's <code>main</code> branch</li>
+<li>GitHub Actions will automatically publish the updates to your git pages.</li>
+</ul>
+<h1 id="prerequisites">Prerequisites:<a aria-hidden="true" class="anchor-heading icon-link" href="#prerequisites"></a></h1>
+<ul>
+<li>Install <a href="https://git-scm.com/download">git</a></li>
+<li>Initializes a npm repo at the root of your workspace (same directory as <code>dendron.yml</code>)</li>
+</ul>
+<pre><code>npm init -y
+</code></pre>
+<p>Install <a href="https://wiki.dendron.so/notes/RjBkTbGuKCXJNuE4dyV6G#setup">dendron-cli</a></p>
+<pre><code>npm install @dendronhq/dendron-cli@latest
+</code></pre>
+<h1 id="steps">Steps:<a aria-hidden="true" class="anchor-heading icon-link" href="#steps"></a></h1>
+<h2 id="preparation">Preparation<a aria-hidden="true" class="anchor-heading icon-link" href="#preparation"></a></h2>
+<ul>
+<li>Create GitHub repo</li>
+<li><code>npx dendron publish init</code></li>
+<li><code>>Dendron: Configure (yaml)</code>, and make the following modification under <code>publishing</code>, where <code>WEBSITE_URL</code> is (in this case) <code>https://{GITHUB_USERNAME}.github.io</code></li>
+</ul>
+<pre><code>...
+publishing:
+    ...
+    siteUrl: {WEBSITE_URL}
+</code></pre>
+<ul>
+<li>Set up GitHub Pages</li>
+</ul>
+<pre><code>git checkout -b pages
+git push -u origin HEAD
+</code></pre>
+<ul>
+<li>Setup GitHub Actions
+<ul>
+<li>Switch back to your main branch
+<pre><code>git checkout main
+</code></pre>
+</li>
+<li>Create a workflow
+<ul>
+<li>mac and linux
+<pre><code>mkdir -p .github/workflows
+touch .github/workflows/publish.yml
+</code></pre>
+</li>
+<li>windows
+<pre><code>mkdir -p .github/workflows
+New-Item .github/workflows/publish.yml
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Setup workflow</li>
+</ul>
+</li>
+</ul>
+<pre><code>name: Build Dendron Static Site
+
+on:
+  workflow_dispatch: # Enables on-demand/manual triggering
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Restore Node modules cache
+      uses: actions/cache@v2
+      id: node-modules-cache
+      with:
+        path: |
+          node_modules
+          .next/*
+          !.next/.next/cache
+          !.next/.env.*
+        key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Initialize or pull nextjs template
+      run: "(test -d .next) &#x26;&#x26; (echo 'updating dendron next...' &#x26;&#x26; cd .next &#x26;&#x26; git reset --hard &#x26;&#x26; git pull &#x26;&#x26; yarn &#x26;&#x26; cd ..) || (echo 'init dendron next' &#x26;&#x26; yarn dendron publish init)"
+
+    - name: Restore Next cache
+      uses: actions/cache@v2
+      with:
+        path: .next/.next/cache
+        # Generate a new cache whenever packages or source files change.
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
+
+    - name: Export notes
+      run: yarn dendron publish export --target github --yes
+
+    - name: Deploy site
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: pages
+        publish_dir: docs/
+        force_orphan: true
+        #cname: example.com
+</code></pre>
+<p>Commit your changes</p>
+<pre><code>git add .
+git commit -m "add workflow"
+git push
+</code></pre>
+<h2 id="previewing-notes">Previewing Notes<a aria-hidden="true" class="anchor-heading icon-link" href="#previewing-notes"></a></h2>
+<pre><code>npx dendron publish dev
+</code></pre>
+<p>Visit <code>http://localhost:3000</code> to check.</p>

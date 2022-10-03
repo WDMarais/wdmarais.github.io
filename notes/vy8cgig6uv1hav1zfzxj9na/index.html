@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><title>GitHub Actions</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal Knowledge Space"/><meta property="og:title" content="GitHub Actions"/><meta property="og:description" content="Personal Knowledge Space"/><meta property="og:url" content="https://wdmarais.github.io//notes/vy8cgig6uv1hav1zfzxj9na/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="10/3/2022"/><meta property="article:modified_time" content="10/3/2022"/><link rel="canonical" href="https://wdmarais.github.io//notes/vy8cgig6uv1hav1zfzxj9na/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/_next/static/css/2a1ea1ae6d4ffa74.css" as="style"/><link rel="stylesheet" href="/_next/static/css/2a1ea1ae6d4ffa74.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-32e56e741dd21442.js" defer=""></script><script src="/_next/static/chunks/framework-bb5c596eafb42b22.js" defer=""></script><script src="/_next/static/chunks/main-c4b0e551a2150d17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a8988e06a38ed063.js" defer=""></script><script src="/_next/static/chunks/855-124c7d93158bd007.js" defer=""></script><script src="/_next/static/chunks/776-959ab9b5289532fd.js" defer=""></script><script src="/_next/static/chunks/pages/notes/%5Bid%5D-9c4f89da4e36492e.js" defer=""></script><script src="/_next/static/Y7qstUn10V9ix4QbrEZ_X/_buildManifest.js" defer=""></script><script src="/_next/static/Y7qstUn10V9ix4QbrEZ_X/_ssgManifest.js" defer=""></script><script src="/_next/static/Y7qstUn10V9ix4QbrEZ_X/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout" style="margin-top:64px;display:flex;flex-direction:row"><div class="site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);background-color:transparent;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></div><main class="ant-layout-content side-layout-main" style="max-width:1200px;min-width:0;display:block"><div class="main-content" role="main" style="padding:0 24px"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="github-actions">GitHub Actions<a aria-hidden="true" class="anchor-heading icon-link" href="#github-actions"></a></h1>
+<h1 id="summary">Summary:<a aria-hidden="true" class="anchor-heading icon-link" href="#summary"></a></h1>
+<ul>
+<li>Do the initial <code>GitHub Actions</code> setup</li>
+<li>Make a commit to your repo's <code>main</code> branch</li>
+<li>GitHub Actions will automatically publish the updates to your git pages.</li>
+</ul>
+<h1 id="prerequisites">Prerequisites:<a aria-hidden="true" class="anchor-heading icon-link" href="#prerequisites"></a></h1>
+<ul>
+<li>Install <a href="https://git-scm.com/download">git</a></li>
+<li>Initializes a npm repo at the root of your workspace (same directory as <code>dendron.yml</code>)</li>
+</ul>
+<pre><code>npm init -y
+</code></pre>
+<p>Install <a href="https://wiki.dendron.so/notes/RjBkTbGuKCXJNuE4dyV6G#setup">dendron-cli</a></p>
+<pre><code>npm install @dendronhq/dendron-cli@latest
+</code></pre>
+<h1 id="steps">Steps:<a aria-hidden="true" class="anchor-heading icon-link" href="#steps"></a></h1>
+<h2 id="preparation">Preparation<a aria-hidden="true" class="anchor-heading icon-link" href="#preparation"></a></h2>
+<ul>
+<li>Create GitHub repo</li>
+<li><code>npx dendron publish init</code></li>
+<li><code>>Dendron: Configure (yaml)</code>, and make the following modification under <code>publishing</code>, where <code>WEBSITE_URL</code> is (in this case) <code>https://{GITHUB_USERNAME}.github.io</code></li>
+</ul>
+<pre><code>...
+publishing:
+    ...
+    siteUrl: {WEBSITE_URL}
+</code></pre>
+<ul>
+<li>Set up GitHub Pages</li>
+</ul>
+<pre><code>git checkout -b pages
+git push -u origin HEAD
+</code></pre>
+<ul>
+<li>Setup GitHub Actions
+<ul>
+<li>Switch back to your main branch
+<pre><code>git checkout main
+</code></pre>
+</li>
+<li>Create a workflow
+<ul>
+<li>mac and linux
+<pre><code>mkdir -p .github/workflows
+touch .github/workflows/publish.yml
+</code></pre>
+</li>
+<li>windows
+<pre><code>mkdir -p .github/workflows
+New-Item .github/workflows/publish.yml
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Setup workflow</li>
+</ul>
+</li>
+</ul>
+<pre><code>name: Build Dendron Static Site
+
+on:
+  workflow_dispatch: # Enables on-demand/manual triggering
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Restore Node modules cache
+      uses: actions/cache@v2
+      id: node-modules-cache
+      with:
+        path: |
+          node_modules
+          .next/*
+          !.next/.next/cache
+          !.next/.env.*
+        key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Initialize or pull nextjs template
+      run: "(test -d .next) &#x26;&#x26; (echo 'updating dendron next...' &#x26;&#x26; cd .next &#x26;&#x26; git reset --hard &#x26;&#x26; git pull &#x26;&#x26; yarn &#x26;&#x26; cd ..) || (echo 'init dendron next' &#x26;&#x26; yarn dendron publish init)"
+
+    - name: Restore Next cache
+      uses: actions/cache@v2
+      with:
+        path: .next/.next/cache
+        # Generate a new cache whenever packages or source files change.
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
+
+    - name: Export notes
+      run: yarn dendron publish export --target github --yes
+
+    - name: Deploy site
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: pages
+        publish_dir: docs/
+        force_orphan: true
+        #cname: example.com
+</code></pre>
+<p>Commit your changes</p>
+<pre><code>git add .
+git commit -m "add workflow"
+git push
+</code></pre>
+<h2 id="previewing-notes">Previewing Notes<a aria-hidden="true" class="anchor-heading icon-link" href="#previewing-notes"></a></h2>
+<pre><code>npx dendron publish dev
+</code></pre>
+<p>Visit <code>http://localhost:3000</code> to check.</p></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#summary" title="Summary:">Summary:</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#prerequisites" title="Prerequisites:">Prerequisites:</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#steps" title="Steps:">Steps:</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#preparation" title="Preparation">Preparation</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#previewing-notes" title="Previewing Notes">Previewing Notes</a></div></div></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></main></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"vy8cgig6uv1hav1zfzxj9na","title":"GitHub Actions","desc":"","updated":1664790204536,"created":1664788061096,"recall":"ignore","custom":{"recall":"ignore"},"fname":"dendron.publishing.github-actions","type":"note","vault":{"fsPath":".","selfContained":true,"name":"secondbrain"},"contentHash":"11f4ed8745066b649e3c0b523463ac55","links":[],"anchors":{"summary":{"type":"header","text":"Summary:","value":"summary","line":8,"column":0,"depth":1},"prerequisites":{"type":"header","text":"Prerequisites:","value":"prerequisites","line":13,"column":0,"depth":1},"steps":{"type":"header","text":"Steps:","value":"steps","line":25,"column":0,"depth":1},"preparation":{"type":"header","text":"Preparation","value":"preparation","line":26,"column":0,"depth":2},"previewing-notes":{"type":"header","text":"Previewing Notes","value":"previewing-notes","line":120,"column":0,"depth":2}},"children":[],"parent":"8du26d930z997epwecmvp70","data":{}},"body":"\u003ch1 id=\"github-actions\"\u003eGitHub Actions\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#github-actions\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003ch1 id=\"summary\"\u003eSummary:\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#summary\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eDo the initial \u003ccode\u003eGitHub Actions\u003c/code\u003e setup\u003c/li\u003e\n\u003cli\u003eMake a commit to your repo's \u003ccode\u003emain\u003c/code\u003e branch\u003c/li\u003e\n\u003cli\u003eGitHub Actions will automatically publish the updates to your git pages.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"prerequisites\"\u003ePrerequisites:\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#prerequisites\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eInstall \u003ca href=\"https://git-scm.com/download\"\u003egit\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eInitializes a npm repo at the root of your workspace (same directory as \u003ccode\u003edendron.yml\u003c/code\u003e)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode\u003enpm init -y\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eInstall \u003ca href=\"https://wiki.dendron.so/notes/RjBkTbGuKCXJNuE4dyV6G#setup\"\u003edendron-cli\u003c/a\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003enpm install @dendronhq/dendron-cli@latest\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1 id=\"steps\"\u003eSteps:\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#steps\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003ch2 id=\"preparation\"\u003ePreparation\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#preparation\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eCreate GitHub repo\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003enpx dendron publish init\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003e\u003eDendron: Configure (yaml)\u003c/code\u003e, and make the following modification under \u003ccode\u003epublishing\u003c/code\u003e, where \u003ccode\u003eWEBSITE_URL\u003c/code\u003e is (in this case) \u003ccode\u003ehttps://{GITHUB_USERNAME}.github.io\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode\u003e...\npublishing:\n    ...\n    siteUrl: {WEBSITE_URL}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003eSet up GitHub Pages\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode\u003egit checkout -b pages\ngit push -u origin HEAD\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003eSetup GitHub Actions\n\u003cul\u003e\n\u003cli\u003eSwitch back to your main branch\n\u003cpre\u003e\u003ccode\u003egit checkout main\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003eCreate a workflow\n\u003cul\u003e\n\u003cli\u003emac and linux\n\u003cpre\u003e\u003ccode\u003emkdir -p .github/workflows\ntouch .github/workflows/publish.yml\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003ewindows\n\u003cpre\u003e\u003ccode\u003emkdir -p .github/workflows\nNew-Item .github/workflows/publish.yml\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSetup workflow\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode\u003ename: Build Dendron Static Site\n\non:\n  workflow_dispatch: # Enables on-demand/manual triggering\n  push:\n    branches:\n    - main\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n    - name: Checkout source\n      uses: actions/checkout@v2\n      with:\n        fetch-depth: 0\n\n    - name: Restore Node modules cache\n      uses: actions/cache@v2\n      id: node-modules-cache\n      with:\n        path: |\n          node_modules\n          .next/*\n          !.next/.next/cache\n          !.next/.env.*\n        key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}\n\n    - name: Install dependencies\n      run: yarn\n\n    - name: Initialize or pull nextjs template\n      run: \"(test -d .next) \u0026#x26;\u0026#x26; (echo 'updating dendron next...' \u0026#x26;\u0026#x26; cd .next \u0026#x26;\u0026#x26; git reset --hard \u0026#x26;\u0026#x26; git pull \u0026#x26;\u0026#x26; yarn \u0026#x26;\u0026#x26; cd ..) || (echo 'init dendron next' \u0026#x26;\u0026#x26; yarn dendron publish init)\"\n\n    - name: Restore Next cache\n      uses: actions/cache@v2\n      with:\n        path: .next/.next/cache\n        # Generate a new cache whenever packages or source files change.\n        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}\n\n    - name: Export notes\n      run: yarn dendron publish export --target github --yes\n\n    - name: Deploy site\n      uses: peaceiris/actions-gh-pages@v3\n      with:\n        github_token: ${{ secrets.GITHUB_TOKEN }}\n        publish_branch: pages\n        publish_dir: docs/\n        force_orphan: true\n        #cname: example.com\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eCommit your changes\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003egit add .\ngit commit -m \"add workflow\"\ngit push\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"previewing-notes\"\u003ePreviewing Notes\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#previewing-notes\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cpre\u003e\u003ccode\u003enpx dendron publish dev\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eVisit \u003ccode\u003ehttp://localhost:3000\u003c/code\u003e to check.\u003c/p\u003e","noteIndex":{"id":"62s4xcxxn78mu2gp2me8u3y","title":"Root","desc":"","updated":1664786639572,"created":1664785626864,"recall":"ignore","custom":{"recall":"ignore","nav_order":0,"permalink":"/"},"fname":"root","type":"note","vault":{"fsPath":".","selfContained":true,"name":"secondbrain"},"contentHash":"b561c3bc6f683dde53768c0cdbd75c5f","links":[],"anchors":{"welcome-to-dendron":{"type":"header","text":"Welcome to Dendron","value":"welcome-to-dendron","line":8,"column":0,"depth":1},"lookup":{"type":"header","text":"Lookup","value":"lookup","line":12,"column":0,"depth":2}},"children":["ht682iqd3xvnbo3qkzf6xbc","nvv71nco88r8tqfuse27qqq","c1jujq1qz16ipp3oaghs84u"],"parent":null,"data":{},"body":"# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true,"enableSelfContainedVaults":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":true,"vaultSelectionModeOnCreate":"smart","leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{"aliasMode":"title"},"templateHierarchy":"template"},"workspace":{"vaults":[{"fsPath":".","selfContained":true,"name":"secondbrain"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"task","dateFormat":"y.MM.dd","addBehavior":"asOwnDomain","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"taskCompleteStatus":["done","x"],"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1,"createStub":false},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800,"enableFullHierarchyNoteTitle":false,"enableSmartRefs":false},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false,"enableMermaid":true},"publishing":{"siteUrl":"https://wdmarais.github.io/","enableFMTitle":true,"enableNoteTitleForLink":true,"enablePrettyRefs":true,"enableKatex":true,"copyAssets":true,"siteHierarchies":["root"],"writeStubs":false,"siteRootDir":"docs","seo":{"title":"Dendron","description":"Personal Knowledge Space"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitHub","editBranch":"main","editViewMode":"tree"},"enableSiteLastModified":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"enableTaskNotes":true,"enablePrettyLinks":true,"siteFaviconPath":"favicon.ico","siteIndex":"root","enableMermaid":true}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"vy8cgig6uv1hav1zfzxj9na"},"buildId":"Y7qstUn10V9ix4QbrEZ_X","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

@@ -1,0 +1,350 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1664814817046,
+      "created": 1664814817047,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "62s4xcxxn78mu2gp2me8u3y": {
+      "id": "62s4xcxxn78mu2gp2me8u3y",
+      "title": "Root",
+      "desc": "",
+      "updated": 1664786639572,
+      "created": 1664785626864,
+      "recall": "ignore",
+      "custom": {
+        "recall": "ignore",
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "b561c3bc6f683dde53768c0cdbd75c5f",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "ht682iqd3xvnbo3qkzf6xbc",
+        "nvv71nco88r8tqfuse27qqq",
+        "c1jujq1qz16ipp3oaghs84u"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "c1jujq1qz16ipp3oaghs84u": {
+      "id": "c1jujq1qz16ipp3oaghs84u",
+      "title": "JavaScript",
+      "desc": "",
+      "updated": 1664785816996,
+      "created": 1664785816996,
+      "custom": {},
+      "fname": "javascript",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "da04875219500dfdcbcf5063d74ea578",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "62s4xcxxn78mu2gp2me8u3y",
+      "data": {}
+    },
+    "nvv71nco88r8tqfuse27qqq": {
+      "id": "nvv71nco88r8tqfuse27qqq",
+      "title": "HTML",
+      "desc": "",
+      "updated": 1664807400071,
+      "created": 1664805692238,
+      "custom": {},
+      "fname": "html",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "c99f96bc5d2dc625604e162e993a650f",
+      "links": [],
+      "anchors": {
+        "anatomy-of-an-html-element": {
+          "type": "header",
+          "text": "Anatomy of an HTML Element",
+          "value": "anatomy-of-an-html-element",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "62s4xcxxn78mu2gp2me8u3y",
+      "data": {}
+    },
+    "ht682iqd3xvnbo3qkzf6xbc": {
+      "id": "ht682iqd3xvnbo3qkzf6xbc",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1664789851814,
+      "created": 1664785829585,
+      "recall": "ignore",
+      "custom": {
+        "recall": "ignore"
+      },
+      "fname": "dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "c4d35cbeb333df56a2791952b4a2e67c",
+      "links": [],
+      "anchors": {
+        "what-is-dendron": {
+          "type": "header",
+          "text": "What is Dendron?",
+          "value": "what-is-dendron",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "8du26d930z997epwecmvp70"
+      ],
+      "parent": "62s4xcxxn78mu2gp2me8u3y",
+      "data": {}
+    },
+    "8du26d930z997epwecmvp70": {
+      "fname": "dendron.publishing",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1664814816923,
+      "created": 1664814816924,
+      "id": "8du26d930z997epwecmvp70",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "vy8cgig6uv1hav1zfzxj9na"
+      ],
+      "parent": "ht682iqd3xvnbo3qkzf6xbc",
+      "data": {},
+      "title": "Publishing"
+    },
+    "vy8cgig6uv1hav1zfzxj9na": {
+      "id": "vy8cgig6uv1hav1zfzxj9na",
+      "title": "GitHub Actions",
+      "desc": "",
+      "updated": 1664790204536,
+      "created": 1664788061096,
+      "recall": "ignore",
+      "custom": {
+        "recall": "ignore"
+      },
+      "fname": "dendron.publishing.github-actions",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "11f4ed8745066b649e3c0b523463ac55",
+      "links": [],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary:",
+          "value": "summary",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "prerequisites": {
+          "type": "header",
+          "text": "Prerequisites:",
+          "value": "prerequisites",
+          "line": 13,
+          "column": 0,
+          "depth": 1
+        },
+        "steps": {
+          "type": "header",
+          "text": "Steps:",
+          "value": "steps",
+          "line": 25,
+          "column": 0,
+          "depth": 1
+        },
+        "preparation": {
+          "type": "header",
+          "text": "Preparation",
+          "value": "preparation",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "previewing-notes": {
+          "type": "header",
+          "text": "Previewing Notes",
+          "value": "previewing-notes",
+          "line": 120,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "8du26d930z997epwecmvp70",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "62s4xcxxn78mu2gp2me8u3y",
+      "title": "Root",
+      "desc": "",
+      "updated": 1664786639572,
+      "created": 1664785626864,
+      "recall": "ignore",
+      "custom": {
+        "recall": "ignore",
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "secondbrain"
+      },
+      "contentHash": "b561c3bc6f683dde53768c0cdbd75c5f",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "ht682iqd3xvnbo3qkzf6xbc",
+        "nvv71nco88r8tqfuse27qqq",
+        "c1jujq1qz16ipp3oaghs84u"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"
+    }
+  ],
+  "noteIndex": {
+    "id": "62s4xcxxn78mu2gp2me8u3y",
+    "title": "Root",
+    "desc": "",
+    "updated": 1664786639572,
+    "created": 1664785626864,
+    "recall": "ignore",
+    "custom": {
+      "recall": "ignore",
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "secondbrain"
+    },
+    "contentHash": "b561c3bc6f683dde53768c0cdbd75c5f",
+    "links": [],
+    "anchors": {
+      "welcome-to-dendron": {
+        "type": "header",
+        "text": "Welcome to Dendron",
+        "value": "welcome-to-dendron",
+        "line": 8,
+        "column": 0,
+        "depth": 1
+      },
+      "lookup": {
+        "type": "header",
+        "text": "Lookup",
+        "value": "lookup",
+        "line": 12,
+        "column": 0,
+        "depth": 2
+      }
+    },
+    "children": [
+      "ht682iqd3xvnbo3qkzf6xbc",
+      "nvv71nco88r8tqfuse27qqq",
+      "c1jujq1qz16ipp3oaghs84u"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "secondbrain"
+    }
+  ]
+}
