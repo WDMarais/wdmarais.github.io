@@ -2,14 +2,14 @@
 id: vy8cgig6uv1hav1zfzxj9na
 title: GitHub Actions
 desc: ''
-updated: 1664788712283
+updated: 1664790204536
 created: 1664788061096
 recall: ignore
 ---
 # Summary:
-1. Do the initial `GitHub Actions` setup
-1. Make a commit to your repo's `main` branch
-1. GitHub Actions will automatically publish the updates to your git pages.
+- Do the initial `GitHub Actions` setup
+- Make a commit to your repo's `main` branch
+- GitHub Actions will automatically publish the updates to your git pages.
 
 # Prerequisites:
 - Install [git](https://git-scm.com/download)
@@ -25,19 +25,97 @@ npm install @dendronhq/dendron-cli@latest
 
 # Steps:
 ## Preparation
-1. Create GitHub repo
-1. `npx dendron publish init`
-1. `>Dendron: Configure (yaml)`, and make the following modification under `publishing`, where `WEBSITE_URL` is (in this case) `https://{GITHUB_USERNAME}.github.io`
+- Create GitHub repo
+- `npx dendron publish init`
+- `>Dendron: Configure (yaml)`, and make the following modification under `publishing`, where `WEBSITE_URL` is (in this case) `https://{GITHUB_USERNAME}.github.io`
 ```
 ...
 publishing:
     ...
     siteUrl: {WEBSITE_URL}
 ```
-1. Set up GitHub Pages
+- Set up GitHub Pages
 ```
 git checkout -b pages
 git push -u origin HEAD
+```
+
+- Setup GitHub Actions
+    - Switch back to your main branch
+    ```
+    git checkout main
+    ```
+    - Create a workflow
+        - mac and linux
+        ```
+        mkdir -p .github/workflows
+        touch .github/workflows/publish.yml
+        ```
+        - windows
+        ```
+        mkdir -p .github/workflows
+        New-Item .github/workflows/publish.yml
+        ```
+    - Setup workflow
+```
+name: Build Dendron Static Site
+
+on:
+  workflow_dispatch: # Enables on-demand/manual triggering
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Restore Node modules cache
+      uses: actions/cache@v2
+      id: node-modules-cache
+      with:
+        path: |
+          node_modules
+          .next/*
+          !.next/.next/cache
+          !.next/.env.*
+        key: ${{ runner.os }}-dendronv2-${{ hashFiles('**/yarn.lock', '**/package-lock.json') }}
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Initialize or pull nextjs template
+      run: "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
+
+    - name: Restore Next cache
+      uses: actions/cache@v2
+      with:
+        path: .next/.next/cache
+        # Generate a new cache whenever packages or source files change.
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
+
+    - name: Export notes
+      run: yarn dendron publish export --target github --yes
+
+    - name: Deploy site
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: pages
+        publish_dir: docs/
+        force_orphan: true
+        #cname: example.com
+```
+Commit your changes
+```
+git add .
+git commit -m "add workflow"
+git push
 ```
 
 ## Previewing Notes
