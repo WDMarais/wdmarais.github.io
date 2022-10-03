@@ -1,0 +1,28 @@
+{
+  "roots": [
+    {
+      "key": "ht682iqd3xvnbo3qkzf6xbc",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "secondbrain",
+      "children": []
+    },
+    {
+      "key": "c1jujq1qz16ipp3oaghs84u",
+      "title": "JavaScript",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "secondbrain",
+      "children": []
+    }
+  ],
+  "child2parent": {
+    "ht682iqd3xvnbo3qkzf6xbc": null,
+    "c1jujq1qz16ipp3oaghs84u": null
+  },
+  "notesLabelById": {
+    "ht682iqd3xvnbo3qkzf6xbc": "Dendron",
+    "c1jujq1qz16ipp3oaghs84u": "JavaScript"
+  }
+}
